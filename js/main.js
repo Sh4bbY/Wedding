@@ -53,7 +53,7 @@ com.shabbtech.global.namespace("com.shabbtech.wedding").main = com.shabbtech.glo
 		}
 		else
 		{
-			//audioPlayer.play();
+			audioPlayer.play();
 		}
 
 		main.height(jQuery(window).innerHeight());
@@ -166,5 +166,5 @@ jQuery(window).load(function()
 	var Main = new com.shabbtech.wedding.main();
 
 	console.log("Welcome visiting this page, hope you enjoy and like it. Greetz ShabbY");
-	console.info("Want to see the code ?  visit www.github.com/asd");
+	console.info("Want to see the code ?  visit https://github.com/Sh4bbY/Wedding");
 });
