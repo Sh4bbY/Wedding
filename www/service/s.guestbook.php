@@ -27,6 +27,10 @@ if(strlen($name)  <= 0 || strlen($msg)  <= 0)
     die('{"status" : "error", "errorFields" : ['.implode(",",$errorFields).']}');
 }
 
-$entries = $db->guestbook->storeEntry($name, $msg);
+if($_SERVER['REMOTE_USER'] != "visitor")
+{
+    $entries = $db->guestbook->storeEntry($name, $msg);
+    die('{"name": "'.$name.'", "msg": "'.$msg.'","status":"success", "date": "'.date("H:i - d.m.y").'"}');
+}
+die('{"name": "ShabbY", "msg": "Visitors are not allowed to post in the guestbook.", "status":"error", "date": "'.date("H:i - d.m.y").'"}');
 
-die('{"name": "'.$name.'", "msg": "'.$msg.'","status":"success", "date": "'.date("H:i - d.m.y").'"}');

@@ -1,5 +1,10 @@
 <?php
 
+if($_SERVER['REMOTE_USER'] == "visitor")
+{
+    die('{"msg": "visitors are restricted to the thumbnails"}');
+}
+
 require_once('../config.php');
 require_once($SETTINGS['FRAMEWORK_ROOT'].'main.php');
 
