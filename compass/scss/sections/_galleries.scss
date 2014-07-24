@@ -1,0 +1,113 @@
+#galleries
+{
+	display: none;
+
+	.gallery_list
+	{
+		width: 98%;
+		padding: 15px 1%;
+		overflow: auto;
+		max-height: 360px;
+
+		&>li
+		{
+			padding: 13px;
+			cursor: pointer;
+			float:left;
+			width: 270px;
+			height: 150px;
+			margin: 5px;
+			position: relative;
+
+			img
+			{
+				@include box-shadow(#333333 2px 2px 3px);
+				position: absolute;
+				display: none;
+
+				&.active
+				{
+					display: block;
+				}
+			}
+
+			.owner
+			{
+				position: absolute;
+				display: inline-block;
+				color:white;
+				font-family: caneletter_script_personal_Rg;
+				font-size: 1.2em;
+				@include text-shadow(rgba(#000000, 0.7) 1px 1px 1px);
+				right: 0;
+				bottom: 0;
+				padding-left: 10px;
+				padding-right: 15px;
+				margin: 13px;
+
+				z-index: 1;
+			}
+
+			&:hover
+			{
+				background-color: rgba(#000000,0.05);
+
+				.owner
+				{
+					background-color: rgba(#fff,0.3);
+				}
+			}
+		}
+	}
+
+	.images
+	{
+		display: none;
+
+		.back
+		{
+			position: absolute;
+			right: 15%;
+			top:-43px;
+			background-image: url('/assets/img/back.png');
+			background-repeat: no-repeat;
+			padding-top: 5px;
+			padding-left: 65px;
+			height: 42px;
+		}
+
+		.image_list
+		{
+			width: 70%;
+			padding: 15px 15%;
+			overflow: auto;
+			max-height: 360px;
+
+			&>li
+			{
+				padding: 13px;
+				cursor: pointer;
+				float:left;
+				width: 190px;
+
+				img
+				{
+					@include box-shadow(#333333 2px 2px 3px);
+				}
+
+				&:hover
+				{
+					background-color: rgba(#000000,0.05);
+				}
+			}
+		}
+	}
+
+
+
+	.lb-data .lb-number
+	{
+		font-size: 0.58em;
+		font-family: champagne__limousinesbold;
+	}
+}

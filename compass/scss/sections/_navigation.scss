@@ -1,0 +1,108 @@
+#main_navigation
+{
+	height: 0;
+	width: 100%;
+	z-index: 10;
+	margin-top: -110px;
+	text-align: center;
+	position: relative;
+
+	.link
+	{
+		cursor: pointer;
+	}
+
+
+	@include text-shadow(rgba(#000000, 0.2) 2px 2px 1px);
+
+	.lvl1.wrapper
+	{
+		font-family: caneletter_script_personal_Rg;
+		position: absolute;
+		z-index: 12;
+		top: 0px;
+		overflow: visible;
+		display: inline-block;
+		font-size: 3.5em;
+		width: 33.33%;
+		text-align: center;
+		max-width: 400px;
+
+		&[data-rel=galleries]
+		{
+			left:0
+		}
+		&[data-rel=videos]
+		{
+			position: relative;
+		}
+		&[data-rel=guestbook]
+		{
+			right: 0;
+		}
+
+		&.link >span
+		{
+			cursor: pointer;
+		}
+
+		&>span
+		{
+			padding-top: 5%;
+			cursor: default;
+		}
+	}
+
+	.lvl2
+	{
+		color: rgba(#444444,0.8);
+		opacity: 0;
+		position: absolute;
+		font-size: 0.5em;
+		width: 100%;
+		z-index: -1;
+		background-image: url('../assets/img/nav_bg2.png');
+		background-position: bottom left;
+		background-repeat: no-repeat;
+
+		&.first
+		{
+			background-image: url('../assets/img/nav_bg1.png');
+		}
+
+		&>li
+		{
+			margin: 2px 0;
+			background-color: rgba(#444444,0.1);
+			cursor: pointer;
+			position: relative;
+
+			&:hover
+			{
+				background-color: rgba(#444444,0.3);
+			}
+
+			.indicator
+			{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width:47px;
+				height: 18px;
+				background-image: url('../assets/img/nav_birds.png');
+				z-index: 1;
+				background-repeat: no-repeat;
+			}
+
+			&.active .indicator
+			{
+				background-image: url('../assets/img/nav_birds_color.png');
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px)
+{
+
+}

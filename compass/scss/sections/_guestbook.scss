@@ -1,0 +1,127 @@
+#guestbook
+{
+	display: none;
+	text-align: center;
+	width: 100%;
+}
+
+
+#bb-bookblock
+{
+	z-index: 9;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 360px;
+	border: 1px solid #E8E8E8;
+	@include box-shadow(rgba(#000000,0.4) 2px 2px 2px);
+	margin-bottom: 40px;
+	max-width: 1000px;
+}
+
+.bb-item
+{
+	background-image: url("/assets/img/pattern/white_texture.png");
+}
+.bb-inner
+{
+	background-color: #eff0f2;
+}
+
+.guestbook_form > ul
+{
+	text-align: left;
+	margin: 50px 2% 0;
+	width: 46%;
+	position: absolute;
+	left: 0;
+
+	textarea, input
+	{
+		@include box-shadow(rgba(#000000,0.4) 2px 2px 2px);
+
+		&.error
+		{
+			@include box-shadow(rgba(#990000,0.4) 3px 3px 3px);
+		}
+
+		resize: none;
+		font-family: geosanslightregular;
+		font-size: 1em;
+		padding: 2%;
+	}
+
+	textarea
+	{
+		width: 90%;
+	}
+
+	input[type=text]
+	{
+		width: 50%;
+	}
+
+	input[type=submit]
+	{
+		cursor: pointer;
+	}
+
+	&>li
+	{
+		margin-bottom: 20px;
+	}
+}
+
+.entry
+{
+	margin: 50px 2% 0;
+	width: 46%;
+	float: right;
+	font-size: 0.85em;
+
+	.info
+	{
+		overflow: hidden;
+		display: block;
+
+		.name
+		{
+			float: left;
+		}
+
+		.date
+		{
+			float: right;
+		}
+	}
+
+	.msg_container
+	{
+		text-align: left;
+		margin-top: 40px;
+		display: block;
+		overflow: auto;
+		height: 215px;
+	}
+}
+
+
+#bb-nav
+{
+	left: 0;
+	top: -30px;
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	z-index: 3;
+}
+
+#bb-nav-prev
+{
+	float:left;
+}
+
+#bb-nav-next
+{
+	float: right;
+}

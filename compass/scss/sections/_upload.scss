@@ -1,0 +1,211 @@
+
+.upload_indicator
+{
+	position: absolute;
+	left:60px;
+	top: -64px;
+	width: 310px;
+	overflow: hidden;
+
+	a
+	{
+		margin-top: 30px;
+		float:right;
+	}
+}
+
+
+#upload
+{
+	padding: 4%;
+	padding-top: 150px;
+	background-color: rgba(#FFFFFF,0.9);
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	width: 92%;
+	height: 92%;
+	top: 200px;
+	display: none;
+	z-index: 10;
+
+
+
+	.menu
+	{
+		padding: 30px 0;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+
+		a
+		{
+			background-color: rgba(150, 150, 150, 0.1);
+			padding: 15px 63px;
+			cursor: pointer;
+		}
+	}
+
+	.exit
+	{
+		float: right;
+	}
+
+	#triggerUpload
+	{
+		margin-right: 30px;
+		display: none;
+		float: right;
+	}
+
+	.locationLabel
+	{
+		margin-left: 30px;
+	}
+
+	input[type=text],select
+	{
+		@include box-shadow(rgba(#000000,0.4) 2px 2px 2px);
+		resize: none;
+		font-family: geosanslightregular;
+		font-size: 1em;
+		padding: 1%;
+	}
+
+	input[type=file]
+	{
+		display: none;
+	}
+
+	.msgBox
+	{
+		display: inline-block;
+		float: right;
+		margin-right: 40px;
+		margin-top: 20px;
+	}
+
+	ul.preview_list
+	{
+		max-height: 280px;
+		overflow: auto;
+	}
+
+	li
+	{
+		background-color: rgba(#555555,0.1);
+		position: relative;
+		margin: 7px;
+		padding: 8px;
+		float: left;
+		display: inline-block;
+		width: 400px;
+		cursor: pointer;
+
+		a.remove
+		{
+			position: absolute;
+			top:0;
+			right:0;
+			padding: 10px 20px;
+			background-color: rgba(#000000,0.1);
+			z-index: 1;
+		}
+
+		&.poster
+		{
+			background-color: rgba(#fed97e,0.5);
+
+			&:hover
+			{
+				background-color: rgba(#fed97e,0.7);
+			}
+		}
+
+		.loading
+		{
+			position: absolute;
+			z-index: -1;
+			width: 0;
+			height: 100%;
+			top:0;
+			left:0;
+			background-color: rgba(#d2d61a,0.5);
+		}
+
+		&:hover
+		{
+			background-color: rgba(#000000,0.1);
+		}
+
+		p
+		{
+			float: right;
+			height: 110px;
+			width: 300px;
+			text-align: right;
+			display: inline-block;
+
+			i
+			{
+				position: absolute;
+				bottom:0;
+				right: 0;
+			}
+		}
+
+		.img_container
+		{
+			position: relative;
+			float: left;
+			height: 110px;
+			max-width: 175px;
+
+			span
+			{
+				padding: 3px;
+				background-color: rgba(#FFFFFF,0.7);
+				position: absolute;
+
+				&.res
+				{
+					font-size: 0.7em;
+					left:0;
+					bottom:0;
+				}
+				&.type
+				{
+					font-size: 0.6em;
+					right:0;
+					top:0;
+				}
+			}
+		}
+		.img_info
+		{
+			margin-left: 10px;
+			position: relative;
+			float: left;
+			height: 110px;
+			width: 210px;
+
+
+			span
+			{
+				padding: 3px;
+
+				&.name
+				{
+					font-size: 0.9em;
+				}
+				&.size
+				{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					font-size: 0.7em;
+				}
+			 }
+		 }
+	}
+}

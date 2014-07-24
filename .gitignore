@@ -1,0 +1,9 @@
+.idea
+*.iml
+compass/.sass-cache
+node_modules/
+www/assets/video/*.mp4
+www/assets/sound/*.mp3
+www/assets/video/*.mp4
+www/assets/img/galleries/**/*.jpg
+

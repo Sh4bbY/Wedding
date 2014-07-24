@@ -1,0 +1,157 @@
+#main #videos
+{
+	.content
+	{
+		width: 70%;
+		overflow: hidden;
+	}
+
+	.video_container
+	{
+		width: 50%;
+		display: inline-block;
+		float: left;
+		text-align: left;
+
+		&.solo
+		{
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+
+			h2,.info
+			{
+				left: 50%;
+				margin-left: -300px;
+			}
+		}
+
+
+		video
+		{
+			margin: 30px 0;
+			width: 100%;
+			max-width: 600px;
+		}
+
+		.info
+		{
+			position: absolute;
+			left:0;
+			width: 50%;
+			max-width: 600px;
+			bottom: 0;
+
+			a
+			{
+				left:0;
+				bottom: 0;
+				z-index: 2;
+				position: absolute;
+			}
+
+			span
+			{
+				font-family: champagne__limousinesregular;
+				font-size: 0.8em;
+				margin-left: 25px;
+				display: inline-block;
+				position: absolute;
+				bottom: 0;
+
+				&.size
+				{
+					right: 100px;
+				}
+				&.duration
+				{
+					right: 0;
+				}
+			}
+		}
+
+		H2
+		{
+			left:0;
+			display: inline-block;
+			position: absolute;
+			text-align: left;
+			margin-bottom: 5px;
+			max-width: 600px;
+		}
+	}
+
+	.video_list
+	{
+		float: right;
+		width: 45%;
+
+
+		&.hidden
+		{
+			display: none;
+		}
+
+		width: 45%;
+		padding: 15px 0;
+		overflow: auto;
+		max-height: 360px;
+
+		&>li
+		{
+			padding: 13px;
+			cursor: pointer;
+			float:left;
+
+			img
+			{
+				@include box-shadow(#333333 2px 2px 3px);
+			}
+
+			&:hover
+			{
+				background-color: rgba(#000000,0.05);
+			}
+
+			&.active
+			{
+				background-color: rgba(#FFFFFF,0.3);
+			}
+		}
+
+		span
+		{
+			float: left;
+			font-size: 0.7em;
+
+			&.duration
+			{
+				margin-top: 4px;
+				font-size: 0.6em;
+				color: #666666;
+				float:right;
+				font-family: champagne__limousinesregular;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 760px)
+{
+	.video_container
+	{
+		video
+		{
+			width: 100%;
+		}
+
+		.info
+		{
+			.duration,.size
+			{
+				display: none;
+			}
+		}
+	}
+}

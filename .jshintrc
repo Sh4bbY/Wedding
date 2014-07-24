@@ -1,0 +1,18 @@
+{
+	"curly": true,
+	"eqeqeq": true,
+	"forin": true,
+	"undef": true,
+	"unused": true,
+	"strict": true,
+
+	"eqnull": true,
+
+	"browser": true,
+	"jquery": true,
+
+	"globals": {
+		"com": true,
+		"console": true
+	}
+}
