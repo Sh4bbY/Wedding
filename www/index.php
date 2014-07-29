@@ -28,8 +28,7 @@ init();
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-		<div id="no_js_screen">Um diese Seite zu besuchen musst du <span style="text-decoration: underline">JavaScript aktivieren</span>.</div>
+        <div id="no_js_screen">Um diese Seite besuchen zu können, musst du <span style="text-decoration: underline">JavaScript aktivieren</span>.</div>
 		<script>
 			document.getElementById("no_js_screen").style.display = 'none';
 		</script>
@@ -77,8 +76,8 @@ init();
             </div>
         </div>
 
-        <script src="/js/global.js"></script>
-        <script src="js/wedding.js"></script>
+        <script src="/js/global.min.js"></script>
+        <script src="js/wedding.min.js"></script>
 
     </body>
 </html>

@@ -53,29 +53,36 @@
         <span class="bg_date">05.07.2014</span>
         <div class="content">
             <div class="video_container">
-                <h2>Hochzeit</h2>
-                <video controls="controls" preload="none" poster="assets/img/poster/hochzeit_poster.jpg">
-                    <source src="assets/video/hochzeit_stream.mp4" type="video/mp4"/>
+                <h2>Trailer</h2>
+                <video controls="controls" preload="none" poster="assets/img/poster/trailer_poster.jpg">
+                    <source src="assets/video/trailer_stream.mp4" type="video/mp4"/>
                 </video>
                 <div class="info">
-                    <a href="assets/video/hochzeit_stream.mp4" download>Download Video</a>
-                    <span class="duration">49:03</span>
-                    <span class="size">921 MB</span>
+                    <a href="assets/video/trailer.mp4" download>Download Video</a>
+                    <span class="duration">03:40</span>
+                    <span class="size">40 MB</span>
                 </div>
             </div>
             <ul class="video_list">
-                <li data-poster-path="assets/img/poster/hochzeit_poster.jpg" data-file-path="assets/video/hochzeit_stream.mp4" data-size="921 MB" data-duration="49:03">
-                    <img src="/assets/img/poster/hochzeit_thumb.jpg" alt="Standesamt">
+                <li data-poster-path="assets/img/poster/trailer_poster.jpg" data-file-path="assets/video/trailer.mp4" data-size="40 MB" data-duration="03:40">
+                    <img src="/assets/img/poster/trailer.jpg" alt="Trailer">
                     <div class="info">
-                        <span class="name">Hochzeit</span>
-                        <span class="duration">49:03</span>
+                        <span class="name">Trailer</span>
+                        <span class="duration">03:40</span>
                     </div>
                 </li>
                 <li data-poster-path="assets/img/poster/hochzeit_speechless_poster.jpg" data-file-path="assets/video/hochzeit_speechless_stream.mp4" data-size="487 MB" data-duration="25:56">
-                    <img src="/assets/img/poster/hochzeit_speechless_thumb.jpg" alt="Standesamt">
+                    <img src="/assets/img/poster/hochzeit_speechless_thumb.jpg" alt="Hochzeit(Speechless)">
                     <div class="info">
                         <span class="name">Hochzeit (Ohne Reden)</span>
                         <span class="duration">25:56</span>
+                    </div>
+                </li>
+                <li data-poster-path="assets/img/poster/hochzeit_poster.jpg" data-file-path="assets/video/hochzeit_stream.mp4" data-size="921 MB" data-duration="49:03">
+                    <img src="/assets/img/poster/hochzeit_thumb.jpg" alt="Hochzeit">
+                    <div class="info">
+                        <span class="name">Hochzeit</span>
+                        <span class="duration">49:03</span>
                     </div>
                 </li>
             </ul>
