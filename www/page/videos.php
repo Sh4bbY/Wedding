@@ -60,12 +60,12 @@
                 <div class="info">
                     <a href="assets/video/trailer.mp4" download>Download Video</a>
                     <span class="duration">03:40</span>
-                    <span class="size">40 MB</span>
+                    <span class="size">68 MB</span>
                 </div>
             </div>
             <ul class="video_list">
-                <li data-poster-path="assets/img/poster/trailer_poster.jpg" data-file-path="assets/video/trailer.mp4" data-size="40 MB" data-duration="03:40">
-                    <img src="/assets/img/poster/trailer.jpg" alt="Trailer">
+                <li data-poster-path="assets/img/poster/trailer_poster.jpg" data-file-path="assets/video/trailer.mp4" data-size="68 MB" data-duration="03:40">
+                    <img src="/assets/img/poster/trailer_thumb.jpg" alt="Trailer">
                     <div class="info">
                         <span class="name">Trailer</span>
                         <span class="duration">03:40</span>
